@@ -1,5 +1,7 @@
 // Nom des classes = Majuscules
 // Nom des objets = Minuscules
+
+// Compilation : g++ main.cpp -o main
 #include <string>
 #include <iostream>
 #include "Personnage.h"
