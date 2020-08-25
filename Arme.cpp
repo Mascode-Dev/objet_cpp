@@ -1,4 +1,4 @@
-#include <string>
+﻿#include <string>
 #include <iostream>
 #include "Arme.h"
 
@@ -28,4 +28,8 @@ void Arme::afficher() const{
 
 int Arme::getDegats() const{
 	return m_degats;
+}
+
+Arme::~Arme(){
+
 }

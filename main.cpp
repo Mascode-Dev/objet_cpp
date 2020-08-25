@@ -1,4 +1,4 @@
-// Nom des classes = Majuscules
+﻿// Nom des classes = Majuscules
 // Nom des objets = Minuscules
 
 // Compilation : g++ main.cpp -o main

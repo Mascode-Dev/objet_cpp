@@ -8,7 +8,8 @@ class Arme
 	public:
 
 	Arme();
-	void changer(std::string nom, int degats);
+	Arme(std::string nom, int degats, int durabilite);
+	void changer(std::string nom, int degats, int durabilite);
 	void afficher() const;
 	int getDegats() const;
 	~Arme();
