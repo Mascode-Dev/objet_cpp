@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
     goliath.attaquer(david); //goliath réattaque david
     david.attaquer(goliath); //david contre-attaque... c'est assez clair non ?
     
-    goliath.changerArme("Double hache tranchante vénéneuse de la mort", 40);
+    goliath.changerArme("Double hache tranchante vénéneuse de la mort", 40, 100);
     goliath.attaquer(david);
 
     cout << "David" << endl;

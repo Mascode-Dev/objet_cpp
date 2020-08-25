@@ -1,5 +1,3 @@
-#pragma once
-
 #include <string>
 #include <iostream>
 #include "Arme.h"
@@ -7,7 +5,6 @@
 class Personnage
 {
 	public:
-
 		Personnage();
 		Personnage(std::string nomArme, int degatsArme, int durabiliteArme);
 		void recevoirDegats(int nbDegats);
@@ -23,7 +20,7 @@ class Personnage
 	private:
 		int m_vie;
 		int m_mana;
-		std::string m_arme;
+		std::string m_nomArme;
 		Arme* m_arme;
 		int m_degatsArme;
 		int m_durabiliteArme;

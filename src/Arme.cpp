@@ -1,4 +1,4 @@
-﻿#include <string>
+#include <string>
 #include <iostream>
 #include "Arme.h"
 
@@ -30,6 +30,4 @@ int Arme::getDegats() const{
 	return m_degats;
 }
 
-Arme::~Arme(){
-
-}
+Arme::~Arme() {}

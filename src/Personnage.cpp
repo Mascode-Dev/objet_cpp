@@ -1,4 +1,4 @@
-﻿#include <string>
+#include <string>
 #include "Personnage.h"
 
 using namespace std;
@@ -12,15 +12,14 @@ using namespace std;
 		m_arme = new Arme(m_nomArme, m_degatsArme, m_durabiliteArme);
 	}
 
-	Personnage::Personnage(std::string nomArme, int degatsArme){
+	Personnage::Personnage(std::string nomArme, int degatsArme, int durabiliteArme) {
 		m_vie = 100;
 		m_mana = 100;
 		this->m_nomArme = nomArme;
 		this->m_degatsArme = degatsArme;
 		this->m_durabiliteArme = durabiliteArme;
-		tauxBouclier = 100;
-
 		m_arme = new Arme(m_nomArme, m_degatsArme, m_durabiliteArme);
+		tauxBouclier = 100;
 	}
 
 	void Personnage::recevoirDegats(int nbDegats){
@@ -33,7 +32,7 @@ using namespace std;
 	}
 
 	void Personnage::attaquer(Personnage &cible){
-		cible.recevoirDegats(m_arme.getDegats());
+		cible.recevoirDegats(m_arme->getDegats());
 		// On inflige à la cible les dégats que cause l'arme
 	}
 
@@ -47,12 +46,11 @@ using namespace std;
 	}
 
 	void Personnage::changerArme(string nomNouvelleArme, int degatsNouvelleArme, int durabiliteNouvelleArme){
-
 		m_arme->changer(nomNouvelleArme, degatsNouvelleArme, durabiliteNouvelleArme);
 	}
 
 	void Personnage::prendreBouclier(int quantiteBouclier){
-		tauxBouclier += quantiteBouclier
+		tauxBouclier += quantiteBouclier;
 
 		if (tauxBouclier > 100){
 
@@ -71,7 +69,6 @@ using namespace std;
 		return m_vie > 0;
 	}
 
-	Personnage::~Personnage(){
-
+	Personnage::~Personnage() {
 		delete m_arme;
 	}
