@@ -11,7 +11,7 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-	Personnage david, goliath;
+    Personnage david, goliath;
     //Création de 2 objets de type Personnage : david et goliath
  
     goliath.attaquer(david); //goliath attaque david
@@ -27,5 +27,5 @@ int main(int argc, char const *argv[])
     cout << endl << "Goliath" << endl;
     goliath.afficherEtat();
     
-	return 0;
+    return 0;
 }
